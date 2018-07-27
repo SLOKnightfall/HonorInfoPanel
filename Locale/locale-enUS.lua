@@ -1,0 +1,43 @@
+local L = LibStub("AceLocale-3.0"):NewLocale("HonorInfoPanel","enUS",true)
+
+L["LEVEL"] = "Level: "
+L["HONOR_STATS"] = HIGHLIGHT_FONT_COLOR_CODE.." -=Honor Stats=- "..FONT_COLOR_CODE_CLOSE
+L["SESSION_TIME"] = "Session Time : "
+L["TOTAL_KILLS"] = "Total Honorable Kills: "
+L["HONOR_POINTS"] = "Honor Points";
+L["HONOR_PER_HOUR"] = "Honor Earned Per Hour: "
+L["SESSION_HONOR"] = "Honor Earned This Session: "
+L["DAILY_HONOR"] = "Honor Earned Today: "
+L["TIME_TO_LEVEL"] = "Time To Next Honor Level: "
+L["GOAL"] = "Goal: "
+L["GOAL_RESET"] = "Goal Reset"
+L["OPTIONS_PANEL_HEADER"] = "Display Panel Settings"
+L["OPTIONS_HONOR_GOAL"] = "Honor Goal"
+L["OPTIONS_HONOR_GOAL_DESCRIPTION"] = "Set an goal number"
+L["OPTIONS_HONOR_GOAL_ALERT"] = "Play alert when goal is met"
+L["OPTIONS_PANEL_SESSIONTIME"] = "Show Session Time"
+L["OPTIONS_PANEL_CURRENTHONOR"] = "Show Current Honor Points"
+L["OPTIONS_PANEL_PERHOUR"] = "Show Honor Per Hour"
+L["OPTIONS_PANEL_SESSIONHONOR"] = "Show Session Honor"
+L["OPTIONS_PANEL_GOAL"] = "Show Goal"
+L["OPTIONS_PANEL_TIMETOLEVEL"] = "Show Time To Level"
+L["OPTIONS_PANEL_HONORLEVEL"] = "Show Honor Level"
+L["OPTIONS_PANEL_DAILYHONOR"] = "Show Total Honor Gain"
+L["OPTIONS_PANEL_HONORKILLS"] = "Show Total Honor Kills"
+L["OPTIONS_PANEL_COLOR"] = "Set Display Panel Background Color"
+L["OPTIONS_PANEL_BORDER"] = "Show Display Panel Border"
+L["OPTIONS_PANEL_SHOW"] = "Show Display Panel"
+L["OPTIONS_PANEL_HIDE"] = "Hide Display Panel"
+L["NA"] = "N/A";
+L["SECONDS"] = "seconds";
+L["MINUTES"] = "minutes";
+L["HOURS"] = "hours";
+L["DAYS"] = "days";
+L["SECONDS_ABBR"] = "s";
+L["MINUTES_ABBR"] = "m";
+L["HOURS_ABBR"] = "h";
+L["DAYS_ABBR"] = "d";
+L["MILLISECOND"] = "ms";
+
+_G["BINDING_NAME_TOGGLE_HONORINFOPANEL"] = "Toggle Display"
+_G["BINDING_HEADER_HONORINFOPANEL"] = "Honor Info Panel"
