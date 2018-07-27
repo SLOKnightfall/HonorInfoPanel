@@ -6,7 +6,6 @@
 ## SavedVariables: HONOR_INFO_PANEL_SETTINGS
 ## OptionalDeps: Titan
 
-
 #Libraries
 Libs\LibStub\LibStub.lua
 Libs\CallbackHandler-1.0\CallbackHandler-1.0.lua
@@ -20,6 +19,7 @@ Libs\AceEvent-3.0\AceEvent-3.0.xml
 Libs\AceHook-3.0\AceHook-3.0.xml
 Libs\AceLocale-3.0\AceLocale-3.0.xml
 
+#Localization
 Locale\locale-enUS.lua
 
 HonorInfoPanel.lua
