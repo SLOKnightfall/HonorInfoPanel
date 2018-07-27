@@ -318,6 +318,7 @@ end
 
 
 function HonorInfoPanel:HONOR_XP_UPDATE()
+	HonorInfoPanel:UpdateProgress()
 	HonorInfoPanel:UpdateHonor()
 	HonorInfoPanel.LDB:Update( )
 end
@@ -339,6 +340,9 @@ function HonorInfoPanel:UpdateHonor()
 	max_honor = UnitHonorMax("player")
 	current_level = UnitHonorLevel("player")
 	my_honor_level_max = 500
+end
+
+function HonorInfoPanel:UpdateProgress()
 
 	local honorOld, honorNew, honorDiff, honorMaxOld, honorRemain, honorLevelNew
 	local Daily = HonorInfoPanel.db.profile.daily_gain
@@ -351,17 +355,16 @@ function HonorInfoPanel:UpdateHonor()
 	--if the current level isn't what it was:
 	if honorLevelNew ~= current_level then
 		honorMaxOld = max_honor
-		honorRemain = honorMaxOld
+		honorRemain = honorMaxOld - honorOld
 		honorDiff = honorNew + honorRemain
-		Goal = Goal - honorDiff
+		--Goal = Goal - honorDiff
 	else
 		honorDiff = honorNew - honorOld
-		Goal = Goal - honorDiff
+		--Goal = Goal - honorDiff
 	end
 
 	Session = Session + honorDiff
-	Daily = Daily + honorDiff
-
+	HonorInfoPanel.db.profile.daily_gain = HonorInfoPanel.db.profile.daily_gain + honorDiff
 
 	if Goal >= 0 then
 	--do nothing.
