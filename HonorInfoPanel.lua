@@ -21,7 +21,7 @@ local defaults = {
     profile = {
 	goal = 0,
 	goal_alert = true,
-	date = date("%m/%d/%y"),
+	date = 0,
 	daily_gain = 0,
 	panel_level = true,
 	panel_sessionTime = true,
@@ -419,11 +419,8 @@ end
 
 
 function HonorInfoPanel:ResetDailyHonor()
-	local Daily = HonorInfoPanel.db.profile.daily_gain
-	local Date = HonorInfoPanel.db.profile.date
-
 	if HonorInfoPanel.db.profile.date ~= date("%m/%d/%y") then
-		Daily = 0
+		HonorInfoPanel.db.profile.daily_gain = 0
 	end
 
 	HonorInfoPanel.db.profile.date = date("%m/%d/%y")
